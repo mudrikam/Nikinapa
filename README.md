@@ -14,25 +14,7 @@
 
 ## Technical Installation Guide
 
-### Recommended: Quick Install (Windows)
-
-Copy-paste this command in Command Prompt:
-
-```cmd
-curl -L https://github.com/mudrikam/Nikinapa/releases/latest/download/nikinapa.zip -o nikinapa.zip && powershell -Command "Expand-Archive -Path nikinapa.zip -DestinationPath . -Force" && del nikinapa.zip && Launcher.bat
-```
-
-**Note:** We assume you know how to open and use Command Prompt. If not, please search online for "how to open and use Command Prompt in Windows".
-
-**What happens when you run this command:**
-1. Downloads the latest release package from GitHub (uses built-in Windows curl)
-2. Extracts the files to the current folder (using PowerShell)
-3. Removes the ZIP file to keep your folder clean
-4. Launches the application automatically
-
-This command is safe and only uses built-in Windows tools. It works on fresh Windows installations without requiring admin rights or installing any software.
-
-### Alternative: Manual Installation
+### Manual Installation
 
 1. Download latest release: 
    - https://github.com/mudrikam/Nikinapa/releases/latest
