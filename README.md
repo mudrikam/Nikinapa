@@ -1,2 +1,62 @@
+# بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم
+
 # Nikinapa
-Niki napa nggih?
+
+<div align="center">
+  <img src="https://img.shields.io/badge/100%25_FREE-brightgreen?style=for-the-badge" alt="100% FREE" />
+  <img src="https://img.shields.io/github/languages/code-size/mudrikam/Nikinapa?style=for-the-badge&color=blue" alt="Code Size" />
+  <img src="https://img.shields.io/github/downloads/mudrikam/Nikinapa/total?style=for-the-badge&color=orange" alt="Total Downloads" />
+</div>
+
+<div align="center">
+  <b>✅ No Serial Key Required ✅ No Payment ✅ No Registration ✅ No Ads</b>
+</div>
+
+## Technical Installation Guide
+
+### Recommended: Quick Install (Windows)
+
+Copy-paste this command in Command Prompt:
+
+```cmd
+curl -L https://github.com/mudrikam/Nikinapa/releases/latest/download/nikinapa.zip -o nikinapa.zip && powershell -Command "Expand-Archive -Path nikinapa.zip -DestinationPath . -Force" && del nikinapa.zip && Launcher.bat
+```
+
+**Note:** We assume you know how to open and use Command Prompt. If not, please search online for "how to open and use Command Prompt in Windows".
+
+**What happens when you run this command:**
+1. Downloads the latest release package from GitHub (uses built-in Windows curl)
+2. Extracts the files to the current folder (using PowerShell)
+3. Removes the ZIP file to keep your folder clean
+4. Launches the application automatically
+
+This command is safe and only uses built-in Windows tools. It works on fresh Windows installations without requiring admin rights or installing any software.
+
+### Alternative: Manual Installation
+
+1. Download latest release: 
+   - https://github.com/mudrikam/Nikinapa/releases/latest
+
+2. Extract the ZIP file into a folder
+
+3. Run `Launcher.bat`
+
+### Technical Notes
+
+- The launcher automatically downloads Python 3.12.10 embedded distribution if not present
+- No prior installation required (works on fresh Windows)
+- Silent updates will be applied automatically when available
+- All files stay contained in the application folder (no system-wide changes)
+
+---
+
+### Disclaimer
+
+This application is provided without warranty. If you don't know what this application is or how to use it, or if you encounter any issues, please ask in our WhatsApp support group:
+
+<div align="center">
+  <a href="https://chat.whatsapp.com/CMQvDxpCfP647kBBA6dRn3" target="_blank">
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Join+Support+Group&color=25D366&logo=WhatsApp&logoColor=black&label=" alt="" />
+  </a>
+</div>
+
