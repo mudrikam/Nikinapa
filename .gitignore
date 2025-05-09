@@ -173,3 +173,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Application data
+database/database.db

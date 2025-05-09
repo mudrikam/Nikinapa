@@ -3,42 +3,42 @@
 # Nikinapa
 
 <div align="center">
-  <img src="https://img.shields.io/badge/100%25_FREE-brightgreen?style=for-the-badge" alt="100% FREE" />
-  <img src="https://img.shields.io/github/languages/code-size/mudrikam/Nikinapa?style=for-the-badge&color=blue" alt="Code Size" />
-  <img src="https://img.shields.io/github/downloads/mudrikam/Nikinapa/total?style=for-the-badge&color=orange" alt="Total Downloads" />
+  <img src="https://img.shields.io/badge/100%25_FREE-brightgreen?style=for-the-badge" alt="100% GRATIS" />
+  <img src="https://img.shields.io/github/languages/code-size/mudrikam/Nikinapa?style=for-the-badge&color=blue" alt="Ukuran Kode" />
+  <img src="https://img.shields.io/github/downloads/mudrikam/Nikinapa/total?style=for-the-badge&color=orange" alt="Total Unduhan" />
 </div>
 
 <div align="center">
-  <b>✅ No Serial Key Required ✅ No Payment ✅ No Registration ✅ No Ads</b>
+  <b>✅ Gratis Tanpa Kunci Serial ✅ Gratis Tanpa Bayar ✅ Tak Perlu Daftar ✅ Bebas Iklan</b>
 </div>
 
-## Technical Installation Guide
+## Cara Pasang
 
-### Manual Installation
+### Pasang Manual
 
-1. Download latest release: 
+1. Download versi terbaru: 
    - https://github.com/mudrikam/Nikinapa/releases/latest
 
-2. Extract the ZIP file into a folder
+2. Ekstrak file ZIP ke folder mana saja
 
-3. Run `Launcher.bat`
+3. Jalankan `Launcher.bat`
 
-### Technical Notes
+### Info Teknis
 
-- The launcher automatically downloads Python 3.12.10 embedded distribution if not present
-- No prior installation required (works on fresh Windows)
-- Silent updates will be applied automatically when available
-- All files stay contained in the application folder (no system-wide changes)
+- Launcher otomatis download Python 3.12.10 embedded kalau belum ada
+- Bisa langsung jalan di Windows baru tanpa perlu instal apa-apa dulu
+- Update otomatis diterapkan saat tersedia
+- Semua file cuma ada di folder aplikasi (nggak ngubah sistem)
 
 ---
 
 ### Disclaimer
 
-This application is provided without warranty. If you don't know what this application is or how to use it, or if you encounter any issues, please ask in our WhatsApp support group:
+Aplikasi ini kami sediakan apa adanya. Kalau bingung cara pakainya atau ada masalah, tanya aja langsung di grup WA kami:
 
 <div align="center">
   <a href="https://chat.whatsapp.com/CMQvDxpCfP647kBBA6dRn3" target="_blank">
-    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Join+Support+Group&color=25D366&logo=WhatsApp&logoColor=black&label=" alt="" />
+    <img src="https://img.shields.io/static/v1?style=for-the-badge&message=Gabung+Grup+WA&color=25D366&logo=WhatsApp&logoColor=black&label=" alt="" />
   </a>
 </div>
 

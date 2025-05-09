@@ -12,6 +12,7 @@ REM 2. If Python folder doesn't exist:
 REM    - Downloads Python 3.12.10 embedded distribution
 REM    - Sets up pip in the embedded distribution
 REM    - Updates application files from GitHub repository
+REM    - Installs required packages from requirements.txt
 REM    - Runs main.py
 REM =====================================================================
 
@@ -28,7 +29,15 @@ REM If it exists, we can directly run the main.py file without setup
 REM If not, we need to set up the environment first
 REM =====================================================================
 if exist "%PYTHON_DIR%" (
-    echo Python installation found. Running main.py...
+    echo Python installation found. Checking requirements...
+    
+    REM Check for requirements.txt and install if it exists
+    if exist "%BASE_DIR%\requirements.txt" (
+        echo Installing requirements from requirements.txt...
+        "%PYTHON_EXE%" -m pip install -r "%BASE_DIR%\requirements.txt" --no-warn-script-location
+    ) else (
+        echo Warning: requirements.txt not found. Skipping package installation.
+    )
     "%PYTHON_EXE%" "%MAIN_PY%"
     goto :eof
 )
@@ -60,12 +69,18 @@ powershell -Command "Expand-Archive -Path '%PYTHON_ZIP%' -DestinationPath '%PYTH
 
 REM =====================================================================
 REM Set up pip in the embedded Python distribution
-REM 1. Create empty requirements.txt file
+REM 1. Check if requirements.txt exists, create if not
 REM 2. Enable site-packages by modifying the _pth file
 REM 3. Download and run get-pip.py to install pip
+REM 4. Install required packages from requirements.txt
 REM =====================================================================
 echo Setting up pip...
-echo. > "%REQUIREMENTS_FILE%"
+
+REM Create requirements.txt if it doesn't exist
+if not exist "%REQUIREMENTS_FILE%" (
+    echo Creating empty requirements.txt file...
+    echo. > "%REQUIREMENTS_FILE%"
+)
 
 REM Enable site-packages in embedded Python by modifying python*._pth file
 REM This is required for pip to work in embedded distribution
@@ -78,6 +93,14 @@ for %%F in ("%PYTHON_DIR%\python*._pth") do (
 REM Download get-pip.py and install pip
 powershell -Command "Invoke-WebRequest -Uri 'https://bootstrap.pypa.io/get-pip.py' -OutFile '%PYTHON_DIR%\get-pip.py'"
 "%PYTHON_DIR%\python.exe" "%PYTHON_DIR%\get-pip.py" --no-warn-script-location
+
+REM Check if requirements.txt exists and install required packages
+if exist "%REQUIREMENTS_FILE%" (
+    echo Installing required packages from requirements.txt...
+    "%PYTHON_DIR%\python.exe" -m pip install -r "%REQUIREMENTS_FILE%" --no-warn-script-location
+) else (
+    echo Warning: requirements.txt not found. Skipping package installation.
+)
 
 REM =====================================================================
 REM Update application files from GitHub repository
