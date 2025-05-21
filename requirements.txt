@@ -1,3 +1,2 @@
-PyQt6==6.9.0
-QtAwesome==1.4.0
-
+PySide6
+google-genai
