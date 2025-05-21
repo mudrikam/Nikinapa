@@ -15,7 +15,7 @@ from google import genai
 from google.genai import types
 
 # Configure the Gemini API
-API_KEY = "AIzaSyBV2-sOsFE_5FMo74hkwYkUi43Gb9q7zfI"
+API_KEY = "AIzaSyDmTk0dta-zMBVFpsLgPH2vfNOpw4fsNTs"
 # Initialize the Gemini client with the API key
 client = genai.Client(api_key=API_KEY)
 
